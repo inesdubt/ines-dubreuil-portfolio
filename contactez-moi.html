@@ -1,0 +1,91 @@
+diff --git a/contactez-moi.html b/contactez-moi.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..960dd677d07d94b7f75c64393ee08ae0a0976ab6
+--- /dev/null
++++ b/contactez-moi.html
+@@ -0,0 +1,85 @@
++<!DOCTYPE html>
++<html lang="fr">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>Contactez-moi | Inès Dubreuil</title>
++    <link rel="stylesheet" href="css/style.css" />
++  </head>
++  <body>
++    <header class="site-header">
++      <div class="container nav">
++        <div class="brand">Inès</div>
++        <nav class="nav-links">
++          <a href="index.html">Accueil</a>
++          <a href="reseaux-sociaux.html">Réseaux sociaux</a>
++          <a href="communication-interne.html">Communication interne</a>
++          <a href="signaletique.html">Signalétique</a>
++          <a href="ugc.html">UGC</a>
++          <a class="active" href="contactez-moi.html">Contactez-moi</a>
++        </nav>
++        <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
++      </div>
++    </header>
++
++    <main>
++      <section class="section">
++        <div class="container">
++          <h1 class="section-title">Contactez-moi</h1>
++          <p class="section-subtitle">
++            Parlons de votre projet et construisons une stratégie alignée avec
++            vos objectifs.
++          </p>
++        </div>
++      </section>
++
++      <section class="section">
++        <div class="container split">
++          <div class="contact-card">
++            <h2 class="section-title">Mes informations</h2>
++            <p>
++              <strong>Email</strong>
++              <a href="mailto:contact@inesdubreuil.fr"
++                >contact@inesdubreuil.fr</a
++              >
++            </p>
++            <p>
++              <strong>Téléphone</strong>
++              <a href="tel:+33600000000">+33 6 00 00 00 00</a>
++            </p>
++            <p>
++              <strong>Localisation</strong>
++              Bordeaux & missions à distance
++            </p>
++          </div>
++
++          <div class="card">
++            <h2 class="section-title">Formulaire</h2>
++            <form class="form">
++              <input type="text" name="name" placeholder="Nom complet" />
++              <input type="email" name="email" placeholder="Email" />
++              <input type="text" name="company" placeholder="Entreprise" />
++              <textarea
++                name="message"
++                placeholder="Décrivez votre besoin"
++              ></textarea>
++              <button class="btn" type="submit">Envoyer</button>
++            </form>
++            <p style="margin-top: 12px; color: var(--color-muted);">
++              (Connectez ce formulaire à Formspree ou Netlify Forms pour
++              recevoir les messages.)
++            </p>
++          </div>
++        </div>
++      </section>
++    </main>
++
++    <footer class="footer">
++      <div class="container">
++        <p>© 2026 Inès Dubreuil — Contact.</p>
++      </div>
++    </footer>
++
++    <script src="js/main.js"></script>
++  </body>
++</html>

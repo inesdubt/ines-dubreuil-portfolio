@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UGC — Inès Dubreuil</title>
+  <meta name="description" content="UGC — Inès Dubreuil.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand__name" href="index.html">Inès Dubreuil</a>
+
+    <nav class="nav nav--desktop" aria-label="Navigation principale">
+      <a href="reseaux-sociaux.html">Réseaux Sociaux</a>
+      <a href="graphisme.html">Graphisme</a>
+      <a href="ugc.html" aria-current="page">UGC</a>
+      <a href="evenementiel.html">Evénementiel</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+
+  <div class="mobileMenu" aria-hidden="true">
+    <nav class="mobileMenu__nav" aria-label="Navigation mobile">
+      <a href="reseaux-sociaux.html">Réseaux Sociaux</a>
+      <a href="graphisme.html">Graphisme</a>
+      <a href="ugc.html" aria-current="page">UGC</a>
+      <a href="evenementiel.html">Evénementiel</a>
+      <a class="btn mobileMenu__cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <button class="overlay" type="button" aria-label="Fermer le menu"></button>
+</header>
+
+<main>
+
+  <!-- HERO cohérent (et tu gardes ton style UGC via tes classes CSS) -->
+  <section class="pageHero">
+    <div class="container">
+      <h1 class="homeHero__title">
+      UGC
+    </h1>
+
+    <p class="homeHero__subtitle">
+      Du contenu authentique qui fait vraiment performer votre marque.
+    </p>
+      <p class="pageHero__lead">
+        Je crée des vidéos UGC naturelles, engageantes et adaptées aux codes des réseaux sociaux.
+        <br><br>
+        <span class="ugcIntro__underline">Mon objectif :</span>
+        produire un contenu crédible, esthétique et performant, qui capte l'attention dès les premières secondes
+        et donne envie d'acheter.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXEMPLES -->
+  <section class="ugcExamples">
+    <div class="container">
+      <h2 class="ugcExamples__title">quelques exemples</h2>
+
+      <div class="ugcAlbum" data-ugc-album>
+        <button class="ugcAlbum__arrow ugcAlbum__arrow--prev" type="button" aria-label="Précédent" data-ugc-prev>‹</button>
+
+        <div class="ugcAlbum__viewport" data-ugc-viewport>
+          <div class="ugcAlbum__track" data-ugc-track>
+
+            <article class="ugcCard">
+              <div class="ugcCard__media" data-ugc-card>
+                <video class="ugcCard__video" muted playsinline preload="metadata">
+                  <source src="assets/ugc/UGC-Garnier.mp4" type="video/mp4">
+                </video>
+                <button class="ugcCard__playBtn" type="button" aria-label="Lire la vidéo"></button>
+              </div>
+              <p class="ugcCard__caption">Gamme Ultra Doux - Garnier</p>
+            </article>
+
+            <article class="ugcCard">
+              <div class="ugcCard__media" data-ugc-card>
+                <video class="ugcCard__video" muted playsinline preload="metadata">
+                  <source src="assets/ugc/UGC-Rituals.mp4" type="video/mp4">
+                </video>
+                <button class="ugcCard__playBtn" type="button" aria-label="Lire la vidéo"></button>
+              </div>
+              <p class="ugcCard__caption">Coffret cadeau - Rituals</p>
+            </article>
+
+            <article class="ugcCard">
+              <div class="ugcCard__media" data-ugc-card>
+                <video class="ugcCard__video" muted playsinline preload="metadata">
+                  <source src="assets/ugc/UGC-Food-tapas.mp4" type="video/mp4">
+                </video>
+                <button class="ugcCard__playBtn" type="button" aria-label="Lire la vidéo"></button>
+              </div>
+              <p class="ugcCard__caption">Bar Tapas - Restaurant</p>
+            </article>
+
+            <article class="ugcCard">
+              <div class="ugcCard__media" data-ugc-card>
+                <video class="ugcCard__video" muted playsinline preload="metadata">
+                  <source src="assets/ugc/UGC-Food-Cinnamonrolls.mp4" type="video/mp4">
+                </video>
+                <button class="ugcCard__playBtn" type="button" aria-label="Lire la vidéo"></button>
+              </div>
+              <p class="ugcCard__caption">Food - Cinnamon rolls</p>
+            </article>
+
+            <article class="ugcCard">
+              <div class="ugcCard__media" data-ugc-card>
+                <video class="ugcCard__video" muted playsinline preload="metadata">
+                  <source src="assets/ugc/UGC-Food-pizza.mp4" type="video/mp4">
+                </video>
+                <button class="ugcCard__playBtn" type="button" aria-label="Lire la vidéo"></button>
+              </div>
+              <p class="ugcCard__caption">Food - Pizza</p>
+            </article>
+
+            <article class="ugcCard">
+              <div class="ugcCard__media" data-ugc-card>
+                <video class="ugcCard__video" muted playsinline preload="metadata">
+                  <source src="assets/ugc/UGC-Food-tapas2.mp4" type="video/mp4">
+                </video>
+                <button class="ugcCard__playBtn" type="button" aria-label="Lire la vidéo"></button>
+              </div>
+              <p class="ugcCard__caption">Food - Tapas (2)</p>
+            </article>
+
+            <article class="ugcCard">
+              <div class="ugcCard__media" data-ugc-card>
+                <video class="ugcCard__video" muted playsinline preload="metadata">
+                  <source src="assets/ugc/UGC-terrasses.mp4" type="video/mp4">
+                </video>
+                <button class="ugcCard__playBtn" type="button" aria-label="Lire la vidéo"></button>
+              </div>
+              <p class="ugcCard__caption">Terrasses</p>
+            </article>
+
+            <article class="ugcCard">
+              <div class="ugcCard__media" data-ugc-card>
+                <video class="ugcCard__video" muted playsinline preload="metadata">
+                  <source src="assets/ugc/UGC-toiles%20et%20broderies.mp4" type="video/mp4">
+                </video>
+                <button class="ugcCard__playBtn" type="button" aria-label="Lire la vidéo"></button>
+              </div>
+              <p class="ugcCard__caption">Toiles et broderies</p>
+            </article>
+
+          </div>
+        </div>
+
+        <button class="ugcAlbum__arrow ugcAlbum__arrow--next" type="button" aria-label="Suivant" data-ugc-next>›</button>
+      </div>
+
+      <div class="ugcAlbum__dots" data-ugc-dots aria-label="Pagination"></div>
+    </div>
+  </section>
+
+  <section class="ctaBand" aria-label="Appel à collaboration">
+    <div class="container ctaBand__inner">
+      <h2 class="ctaBand__title">
+        Contactez-moi pour<br>
+        collaborer sur des créations<br>
+        visuelles percutantes.
+      </h2>
+      <a class="btn btn--light" href="contact.html">Me contacter</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__block">
+      <p class="footer__title">Téléphone</p>
+      <a class="footer__link" href="tel:+33632101691">06 32 10 16 91</a>
+    </div>
+
+    <div class="footer__block">
+      <p class="footer__title">E-mail</p>
+      <a class="footer__link" href="mailto:insdubreuil@gmail.com">insdubreuil@gmail.com</a>
+    </div>
+
+    <div class="footer__block">
+      <p class="footer__title">©</p>
+      <p class="footer__text">© <span id="year"></span> Inès Dubreuil</p>
+    </div>
+  </div>
+</footer>
+
+<section class="subfooter" aria-label="Liens légaux">
+  <div class="container subfooter__inner">
+    <p class="subfooter__copy">© <span id="year2"></span> Inès Dubreuil. Tous droits réservés.</p>
+
+    <nav class="subfooter__links" aria-label="Liens légaux">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="plan-du-site.html">Plan du site</a>
+    </nav>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>

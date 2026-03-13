@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Inès Dubreuil</title>
+  <meta name="description" content="Portfolio d’Inès Dubreuil — Réseaux Sociaux, Graphisme, UGC, Evénementiel.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand__name" href="index.html">Inès Dubreuil</a>
+
+    <nav class="nav nav--desktop" aria-label="Navigation principale">
+      <a href="reseaux-sociaux.html">Réseaux Sociaux</a>
+      <a href="graphisme.html">Graphisme</a>
+      <a href="ugc.html">UGC</a>
+      <a href="evenementiel.html">Evénementiel</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+
+  <div class="mobileMenu" aria-hidden="true">
+    <nav class="mobileMenu__nav" aria-label="Navigation mobile">
+      <a href="reseaux-sociaux.html">Réseaux Sociaux</a>
+      <a href="graphisme.html">Graphisme</a>
+      <a href="ugc.html">UGC</a>
+      <a href="evenementiel.html">Evénementiel</a>
+      <a class="btn mobileMenu__cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <button class="overlay" type="button" aria-label="Fermer le menu"></button>
+</header>
+
+<main>
+
+  <!-- HERO (image1) -->
+ <section class="homeHero">
+  <div class="container">
+    <h1 class="homeHero__title">
+      Communication et événementiel
+    </h1>
+
+    <p class="homeHero__subtitle">
+      L’association de deux passions<br>
+      au service de votre réussite.
+    </p>
+  </div>
+</section>
+
+  <!-- QUI SUIS-JE : texte puis image2 -->
+  <section class="section section--soft" id="apropos">
+    <div class="container aboutBlock aboutBlock--textFirst">
+      <div class="aboutBlock__text">
+        <h2 class="h2 h2--shadow">Qui suis-je ?</h2>
+
+        <p class="aboutBlock__p">
+          Bonjour,<br>
+          Je suis Inès, diplômée d’un Master à l’IAE de Lyon et passionnée par la
+          <strong>création, l'événementiel</strong> et les <strong>arts graphiques</strong>.
+        </p>
+
+        <blockquote class="quote">
+          “Le plus difficile de tous les défis : faire en sorte que les gens soient heureux de se rendre à leur travail tous les matins.” — Ricardo Semler
+        </blockquote>
+
+        <p class="signature">Ensemble, créons ce qui vous ressemble&nbsp;!</p>
+
+        <div class="ctaRow">
+          <a class="btn btn--ghost" href="ugc.html">Voir mes vidéos</a>
+        </div>
+      </div>
+
+      <figure class="aboutBlock__media">
+        <img src="assets/img/image2.jpg" alt="Photo de Inès" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- MON EXPERTISE : image3 seule -->
+  <section class="section" id="expertise">
+    <div class="container">
+      <h2 class="h2 h2--shadow">Mon expertise</h2>
+
+      <figure class="expertiseGrid__visual">
+        <img src="assets/img/image3.jpg" alt="Visuel Mon expertise" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- COMMENT JE FONCTIONNE : 5 blocs texte -->
+  <section class="section section--soft" id="process">
+    <div class="container">
+      <h2 class="h2 h2--shadow">Comment je fonctionne ?</h2>
+
+      <div class="processSteps">
+        <article class="step">
+          <div class="step__n">1.</div>
+          <div class="step__t">Prenons contact</div>
+          <div class="step__p">Échangeons par mail ou lors d’un appel pour comprendre vos objectifs et vos besoins.</div>
+        </article>
+
+        <article class="step">
+          <div class="step__n">2.</div>
+          <div class="step__t">Chiffrage et contrat</div>
+          <div class="step__p">Je vous transmettrai un chiffrage et le contrat reprenant le détail de notre collaboration.</div>
+        </article>
+
+        <article class="step">
+          <div class="step__n">3.</div>
+          <div class="step__t">Rédaction d’un rétro planning</div>
+          <div class="step__p">Nous établirons ensemble les tâches à réaliser et les échéances à respecter.</div>
+        </article>
+
+        <article class="step">
+          <div class="step__n">4.</div>
+          <div class="step__t">Création</div>
+          <div class="step__p">Nous mettons en œuvre votre projet et validons ensemble les avancées.</div>
+        </article>
+
+        <article class="step">
+          <div class="step__n">5.</div>
+          <div class="step__t">Finalisation</div>
+          <div class="step__p">Réception des paiements et envois finaux des éléments, en fonction de la prestation.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FIN -->
+  <section class="ctaBand" aria-label="Appel à collaboration">
+    <div class="container ctaBand__inner">
+      <h2 class="ctaBand__title">
+        Contactez-moi pour<br>
+        collaborer sur des créations<br>
+        visuelles percutantes.
+      </h2>
+      <a class="btn btn--light" href="contact.html">Me contacter</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__block">
+      <p class="footer__title">Téléphone</p>
+      <a class="footer__link" href="tel:+33632101691">06 32 10 16 91</a>
+    </div>
+
+    <div class="footer__block">
+      <p class="footer__title">E-mail</p>
+      <a class="footer__link" href="mailto:insdubreuil@gmail.com">insdubreuil@gmail.com</a>
+    </div>
+
+    <div class="footer__block">
+      <p class="footer__title">©</p>
+      <p class="footer__text">© <span id="year"></span> Inès Dubreuil</p>
+    </div>
+  </div>
+</footer>
+
+<section class="subfooter" aria-label="Liens légaux">
+  <div class="container subfooter__inner">
+    <p class="subfooter__copy">© <span id="year2"></span> Inès Dubreuil. Tous droits réservés.</p>
+
+    <nav class="subfooter__links" aria-label="Liens légaux">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="plan-du-site.html">Plan du site</a>
+    </nav>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>

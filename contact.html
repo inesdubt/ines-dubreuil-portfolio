@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Inès Dubreuil</title>
+  <meta name="description" content="Contactez Inès Dubreuil pour une collaboration.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand__name" href="index.html">Inès Dubreuil</a>
+
+    <nav class="nav nav--desktop" aria-label="Navigation principale">
+      <a href="reseaux-sociaux.html">Réseaux Sociaux</a>
+      <a href="graphisme.html">Graphisme</a>
+      <a href="ugc.html">UGC</a>
+      <a href="evenementiel.html">Evénementiel</a>
+      <a class="btn" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+
+  <div class="mobileMenu" aria-hidden="true">
+    <nav class="mobileMenu__nav" aria-label="Navigation mobile">
+      <a href="reseaux-sociaux.html">Réseaux Sociaux</a>
+      <a href="graphisme.html">Graphisme</a>
+      <a href="ugc.html">UGC</a>
+      <a href="evenementiel.html">Evénementiel</a>
+      <a class="btn mobileMenu__cta" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+
+  <button class="overlay" type="button" aria-label="Fermer le menu"></button>
+</header>
+
+<main>
+
+  <section class="pageHero">
+    <div class="container">
+       <h1 class="homeHero__title">Me contacter</h1>
+      <p class="pageHero__lead">Un projet, une idée ou une collaboration en tête ?</p>
+    </div>
+  </section>
+
+  <section class="contactSection">
+    <div class="container contactCenter">
+
+      <form id="contactForm" class="contactForm" novalidate>
+
+        <div class="field">
+          <label for="name">Nom *</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail *</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <div class="field">
+          <label for="service">Sujet</label>
+          <select id="service" name="service">
+            <option value="">— Sélectionner —</option>
+            <option>Réseaux sociaux</option>
+            <option>Graphisme</option>
+            <option>UGC</option>
+            <option>Evénementiel</option>
+            <option>Autre</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button class="btn btn--contact" type="submit">Envoyer</button>
+
+        <p class="formStatus" id="formStatus"></p>
+
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__block">
+      <p class="footer__title">Téléphone</p>
+      <a class="footer__link" href="tel:+33632101691">06 32 10 16 91</a>
+    </div>
+
+    <div class="footer__block">
+      <p class="footer__title">E-mail</p>
+      <a class="footer__link" href="mailto:insdubreuil@gmail.com">insdubreuil@gmail.com</a>
+    </div>
+
+    <div class="footer__block">
+      <p class="footer__title">©</p>
+      <p class="footer__text">© <span id="year"></span> Inès Dubreuil</p>
+    </div>
+  </div>
+</footer>
+
+<section class="subfooter" aria-label="Liens légaux">
+  <div class="container subfooter__inner">
+    <p class="subfooter__copy">© <span id="year2"></span> Inès Dubreuil. Tous droits réservés.</p>
+
+    <nav class="subfooter__links" aria-label="Liens légaux">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="plan-du-site.html">Plan du site</a>
+    </nav>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+
+<script>
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("formStatus");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const service = form.service.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !email || !message) {
+      status.textContent = "Merci de remplir les champs obligatoires.";
+      return;
+    }
+
+    const subject = service ? `Contact — ${service}` : "Demande de contact";
+    const body =
+      `Nom : ${name}\n` +
+      `Email : ${email}\n` +
+      (service ? `Sujet : ${service}\n` : "") +
+      `\nMessage :\n${message}`;
+
+    window.location.href =
+      `mailto:insdubreuil@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+</script>
+
+</body>
+</html>

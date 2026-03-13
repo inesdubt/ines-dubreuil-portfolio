@@ -1,0 +1,130 @@
+diff --git a/communication-interne.html b/communication-interne.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..3cfb0b552c929fe8bff05fc97a3f7a07ac861381
+--- /dev/null
++++ b/communication-interne.html
+@@ -0,0 +1,96 @@
++<!DOCTYPE html>
++<html lang="fr">
++  <header class="header">
+  <div class="container header__inner">
+    <a class="brand__name" href="index.html">Inès Dubreuil</a>
+
+    <nav class="nav nav--desktop" aria-label="Navigation principale">
+      <a href="reseaux-sociaux.html">Réseaux Sociaux</a>
+      <a href="graphisme.html">Graphisme</a>
+      <a href="ugc.html">UGC</a>
+      <a href="evenementiel.html">Evénementiel</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Burger (mobile) -->
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <div class="mobileMenu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobileMenu__nav" aria-label="Navigation mobile">
+      <a href="reseaux-sociaux.html">Réseaux Sociaux</a>
+      <a href="graphisme.html">Graphisme</a>
+      <a href="ugc.html">UGC</a>
+      <a href="evenementiel.html">Evénementiel</a>
+      <a class="btn mobileMenu__cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <button class="overlay" type="button" aria-label="Fermer le menu"></button>
+</header>
+
++  <body>
++    <header class="site-header">
++      <div class="container nav">
++        <div class="brand">Inès</div>
++        <nav class="nav-links">
++          <a href="index.html">Accueil</a>
++          <a href="reseaux-sociaux.html">Réseaux sociaux</a>
++          <a class="active" href="communication-interne.html"
++            >Communication interne</a
++          >
++          <a href="signaletique.html">Signalétique</a>
++          <a href="ugc.html">UGC</a>
++          <a href="contactez-moi.html">Contactez-moi</a>
++        </nav>
++        <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
++      </div>
++    </header>
++
++    <main>
++      <section class="section">
++        <div class="container">
++          <h1 class="section-title">Communication interne</h1>
++          <p class="section-subtitle">
++            Projets réalisés pour fédérer, informer et accompagner les équipes.
++          </p>
++        </div>
++      </section>
++
++      <section class="section">
++        <div class="container grid-3">
++          <article class="card">
++            <span class="tag">Projet</span>
++            <h3>Newsletter mensuelle</h3>
++            <p>
++              Conception graphique, rédaction et déclinaison mobile pour les
++              équipes internes.
++            </p>
++          </article>
++          <article class="card">
++            <span class="tag">Projet</span>
++            <h3>Kits d’onboarding</h3>
++            <p>
++              Supports visuels et fiches pratiques pour intégrer les nouveaux
++              collaborateurs.
++            </p>
++          </article>
++          <article class="card">
++            <span class="tag">Projet</span>
++            <h3>Communication RH</h3>
++            <p>
++              Campagnes internes, affiches et posts intranet pour valoriser la
++              marque employeur.
++            </p>
++          </article>
++        </div>
++      </section>
++
++      <section class="section">
++        <div class="container split">
++          <div class="card">
++            <h3>Process de collaboration</h3>
++            <ol>
++              <li>Recueil des besoins avec les équipes.</li>
++              <li>Propositions créatives et validations.</li>
++              <li>Production des supports et diffusion.</li>
++            </ol>
++          </div>
++          <div class="card">
++            <h3>Supports livrables</h3>
++            <ul>
++              <li>Affiches & flyers internes</li>
++              <li>Newsletters & intranet</li>
++              <li>Guides RH et présentations</li>
++            </ul>
++          </div>
++        </div>
++      </section>
++    </main>
++
++    <footer class="footer">
++      <div class="container">
++        <p>© 2026 Inès Dubreuil — Communication interne.</p>
++      </div>
++    </footer>
++
++    <script src="js/main.js"></script>
++  </body>
++</html>
